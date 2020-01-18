@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Trails from './components/trails.jsx';
+
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Nice to see you</h1>
+      <div className="container">
+        <div className="jumbotron">
+          <h1>MTB Baby</h1>
+        </div>
+          <Trails />
       </div>
     )
   }
