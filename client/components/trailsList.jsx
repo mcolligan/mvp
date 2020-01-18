@@ -5,7 +5,7 @@ const TrailsList = (props) => {
   return (
     <div className="row">
       <div className="col-sm-4">
-        <div className="card" style={{ width: 17 + 'rem', height: 31 + 'rem' }}>
+        <div className="card" style={{ width: 17 + 'rem', height: 35 + 'rem' }}>
           <img src={props.info.imgMedium} className="card-img-top" style={{ height: 14 + 'rem' }}></img>
           <div className="card-body flex-fill">
             <p className="card-subtitle mb-2 text-muted border-bottom text-right"><small><em><b>{props.info.name}</b></em></small></p>
@@ -39,6 +39,7 @@ const TrailsList = (props) => {
                   <p className="card-text text-left" style={{ color: 'black' }}>&#x25C8;</p>
                 </div>
               }
+              <p className="card-text"><small className="text-muted text-right">Dist: {props.info.length}mi</small></p>
               <p className="card-subtitle mb-2 text-muted border-bottom text-left"><small><em><b>Conditions: {props.info.conditionStatus}</b></em></small></p>
               <p className="card-text"><small className="text-muted text-right">Last update: {props.info.conditionDate}</small></p>
             </div>

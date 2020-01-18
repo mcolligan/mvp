@@ -8,10 +8,9 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="jumbotron">
-          {/* <img src='../../../images/banner.jpg'></img> */}
-        <h1>MTB Baby</h1>
+          <h1>MTB Baby</h1>
         </div>
-        <Trails />
+          <Trails />
       </div>
     )
   }
