@@ -1,4 +1,6 @@
 import React from 'react';
+
+import SearchBox from './searchBox.jsx'
 import TrailsList from './trailsList.jsx';
 import tempData from '../../tempData.json';
 
@@ -18,11 +20,14 @@ class Trails extends React.Component {
   render() {
     return (
       <div className="container">
-        <h4><em><u>Trails Near: {this.state.loc}</u></em></h4>
-        <div className="card-group d-flex flex-wrap">
-          {this.state.trails.map((el, i) =>
-            <TrailsList key={i} info={el} />
-          )}
+        <SearchBox />
+        <div className="container p-1">
+          <h4><em><u>Trails Near: {this.state.loc}</u></em></h4>
+          <div className="card-group d-flex flex-wrap p-1">
+            {this.state.trails.map((el, i) =>
+              <TrailsList key={i} info={el} />
+            )}
+          </div>
         </div>
       </div>
     )

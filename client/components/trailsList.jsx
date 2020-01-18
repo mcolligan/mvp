@@ -1,7 +1,6 @@
 import React from 'react';
 
 const TrailsList = (props) => {
-  console.log(props);
   return (
     <div className="row">
       <div className="col-sm-4">
