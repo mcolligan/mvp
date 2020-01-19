@@ -1,3 +1,9 @@
-const { thing } = require('../../config.js');
+const { api, loc } = require('../../config.js');
 
-console.log(thing);
+// http://www.datasciencetoolkit.org/street2coordinates/Boulder%2c+CO
+const getLatLon = (location) => {
+  console.log(loc + location)
+}
+
+module.exports = { getLatLon };
+

@@ -1,8 +1,8 @@
 import React from 'react';
 
 class SearchBox extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       searchTerm: ''
     }
@@ -12,8 +12,8 @@ class SearchBox extends React.Component {
     this.setState({term: e.target.value});
   }
 
-  searchClick(e) {
-    e.preventDefault();
+  clicked(e) {
+    this.props.searchClick(e, this.state.term)
   }
 
   render() {
@@ -25,7 +25,7 @@ class SearchBox extends React.Component {
               <input className="form-control form-control-sm" type="text" onChange={this.handleChange.bind(this)} />
             </div>
             <div className="col">
-              <input className="btn-outline-info" type="submit" onClick={this.searchClick.bind(this)}/>
+              <input className="btn-outline-info" type="submit" onClick={this.clicked.bind(this)} />
             </div>
           </div>
         </form>
