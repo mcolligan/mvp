@@ -10,7 +10,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 app.get('/trails', (req, res) => {
-  conn.getLatLon(req.url.substring(12))
+  conn.getLatLon(req.query.loc, (data) => {
+    let place = JSON.parse(data)
+    conn.getTrails(place[req.query.loc])
+    // res.send(data);
+  })
 })
 
 app.listen('3000', () => {

@@ -1,9 +1,20 @@
 const { api, loc } = require('../../config.js');
+const request = require('request');
 
-// http://www.datasciencetoolkit.org/street2coordinates/Boulder%2c+CO
-const getLatLon = (location) => {
-  console.log(loc + location)
+const getLatLon = (location, cb) => {
+  request.get(`${loc + location}`, (err, res) => {
+    if (err) {
+      cb(err);
+    } else {
+      cb(res.body);
+    }
+  })
 }
 
-module.exports = { getLatLon };
+const getTrails = (place, cb) => {
+  // request MTB api -- don't make them mad
+  console.log(place)
+}
+
+module.exports = { getLatLon, getTrails };
 
