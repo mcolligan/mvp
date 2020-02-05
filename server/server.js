@@ -12,8 +12,9 @@ app.use(bodyParser.json());
 app.get('/trails', (req, res) => {
   conn.getLatLon(req.query.loc, (data) => {
     let place = JSON.parse(data)
-    conn.getTrails(place[req.query.loc])
-    // res.send(data);
+    conn.getTrails(place[req.query.loc], (theTrails) => {
+      res.send(theTrails);
+    })
   })
 })
 

@@ -1,4 +1,4 @@
-const { api, loc } = require('../../config.js');
+const { api, loc, mtb } = require('../../config.js');
 const request = require('request');
 
 const getLatLon = (location, cb) => {
@@ -12,8 +12,13 @@ const getLatLon = (location, cb) => {
 }
 
 const getTrails = (place, cb) => {
-  // request MTB api -- don't make them mad
-  console.log(place)
+  request.get(`${mtb}lat=${place.latitude}&lon=${place.longitude}&maxDistance=50&key=${api}`, (err, res) => {
+    if (err) {
+      cb(err);
+    } else {
+      cb(res.body);
+    }
+  })
 }
 
 module.exports = { getLatLon, getTrails };

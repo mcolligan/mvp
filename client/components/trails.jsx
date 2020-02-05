@@ -15,15 +15,14 @@ class Trails extends React.Component {
   }
 
   searchClick(e, term) {
-    // Change this maybe---
-    // fetch here for coordinates then axios.get to MTB api
     e.preventDefault();
     axios.get('/trails', {
       params: {
         loc: term
       }
     }).then((data) => {
-
+      // update state with trails
+      console.log(data);
     })
   }
 

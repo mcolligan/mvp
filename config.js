@@ -4,5 +4,7 @@ dotenv.config();
 
 module.exports = {
   api: process.env.KEY,
-  loc: process.env.LOC
+  loc: process.env.LOC,
+  mtb: process.env.MTB
 };
+
