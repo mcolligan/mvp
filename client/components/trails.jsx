@@ -22,7 +22,10 @@ class Trails extends React.Component {
       }
     }).then((data) => {
       // update state with trails
-      console.log(data);
+      this.setState({
+        trails: [...data.data.trails],
+        loc: term
+      })
     })
   }
 
