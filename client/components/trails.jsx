@@ -17,11 +17,8 @@ class Trails extends React.Component {
   searchClick(e, term) {
     e.preventDefault();
     axios.get('/trails', {
-      params: {
-        loc: term
-      }
+      params: { loc: term }
     }).then((data) => {
-      // update state with trails
       this.setState({
         trails: [...data.data.trails],
         loc: term
