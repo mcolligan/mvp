@@ -3,5 +3,8 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 module.exports = {
-  thing: process.env.THING
+  api: process.env.KEY,
+  loc: process.env.LOC,
+  mtb: process.env.MTB
 };
+
