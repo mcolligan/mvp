@@ -1,1 +1,1 @@
-# mvp
+# MTB Trail Companion v1.1
