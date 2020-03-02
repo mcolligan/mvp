@@ -58,8 +58,8 @@ class Trails extends React.Component {
     }
   }
   render() {
-    let sliderStyle ={
-      transform:`translateX(${this.state.activeIndex * -100}%)`,
+    let sliderStyle = {
+      transform: `translateX(${this.state.activeIndex * -100}%)`,
       transition: '0.2s'
     }
     return (
@@ -67,7 +67,7 @@ class Trails extends React.Component {
         <SearchBox searchClick={this.searchClick.bind(this)} />
         <div className="container p-1">
           <h4><em><u>Trails Near: {this.state.loc}</u></em></h4>
-          <div className="container" style={{ overflown: 'hidden'}}>
+          <div className="container" style={{ overflown: 'hidden' }}>
             <div className="carousel slide" data-ride="carousel">
               <div className="carousel-inner row" >
                 <div className="card-group d-flex flex-nowrap p-1">
@@ -79,12 +79,10 @@ class Trails extends React.Component {
                 </div>
               </div>
               <a className="carousel-control-prev" role="button" data-slide="prev" onClick={this.prevClick}>
-                <span className="carousel-control-prev-icon"></span>
-                <span className="sr-only">Previous</span>
+                <i class="fas fa-chevron-circle-left fa-3x"></i>
               </a>
               <a className="carousel-control-next" role="button" data-slide="prev" onClick={this.nextClick}>
-                <span className="carousel-control-next-icon"></span>
-                <span className="sr-only">Next</span>
+                <i class="fas fa-chevron-circle-right fa-3x"></i>
               </a>
             </div>
           </div>
