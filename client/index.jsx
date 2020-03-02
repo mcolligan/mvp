@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="jumbotron">
-          <h1>MTB Baby</h1>
+          <h2>MTB Trail Companion</h2>
         </div>
           <Trails />
       </div>

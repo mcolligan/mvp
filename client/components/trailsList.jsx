@@ -5,7 +5,7 @@ const TrailsList = (props) => {
   return (
     <div className="row p-1">
       <div className="col-sm-4">
-        <div className="card" style={{ width: 17 + 'rem', height: 35 + 'rem' }}>
+        <div className="card" style={{ width: 17 + 'rem', height: 35 + 'rem', border: 1 + 'px solid black' }}>
           <button className="btn btn-floating" type="button" style={{ position: 'absolute', top: .312 + 'rem', right: .312 + 'rem', color: 'white' }}><b>&#43;</b></button>
           <img src={props.info.imgMedium} className="card-img-top" style={{ height: 14 + 'rem' }}></img>
           <div className="card-body flex-fill overflow-auto">

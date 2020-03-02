@@ -60,7 +60,7 @@ class Trails extends React.Component {
   render() {
     let sliderStyle = {
       transform: `translateX(${this.state.activeIndex * -100}%)`,
-      transition: '0.2s'
+      transition: '0.5s'
     }
     return (
       <div className="container">
@@ -79,10 +79,10 @@ class Trails extends React.Component {
                 </div>
               </div>
               <a className="carousel-control-prev" role="button" data-slide="prev" onClick={this.prevClick}>
-                <i class="fas fa-chevron-circle-left fa-3x"></i>
+                <i className="fas fa-chevron-circle-left fa-2x"></i>
               </a>
               <a className="carousel-control-next" role="button" data-slide="prev" onClick={this.nextClick}>
-                <i class="fas fa-chevron-circle-right fa-3x"></i>
+                <i className="fas fa-chevron-circle-right fa-2x"></i>
               </a>
             </div>
           </div>
@@ -93,10 +93,3 @@ class Trails extends React.Component {
 }
 
 export default Trails;
-
-{/* <div className="box">
-        <div id="cards" className="carousel slide" data-ride="carousel">
-          <div className="carousel-inner row w-100">
-            <div className="card-group d-flex flex-nowrap overflow-auto"></div> */}
-
-// One per line -- https://mdbootstrap.com/docs/jquery/javascript/carousel/
