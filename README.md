@@ -21,8 +21,8 @@ $ npm run react-dev
 ![search bar](./client/dist/images/bar.png)
 
 * Search Bar.
-  1. Input box for location search.
-  2. Submit button.
+  * 1. Input box for location search.
+  * 2. Submit button.
 
 
 
