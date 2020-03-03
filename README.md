@@ -18,7 +18,7 @@ $ npm run react-dev
 
 ## App Layout:
 
-![search bar](./components/dist/images/bar.png)
+![search bar](./client/components/dist/images/bar.png)
 
 
 
