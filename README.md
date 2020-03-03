@@ -32,14 +32,14 @@ Search Bar -
 Trails Carousel -
   3. Display location of search results.
   4. Trail cards - all loaded from MTB Project API.
-    * img
-    * Trail name
-    * Description
-    * Diffuculty - converted to ski style notation
-    * Distance
-    * Conditions
-    * Condition details
-    * Stamp for last conditions update
+    - img
+    - Trail name
+    - Description
+    - Diffuculty - converted to ski style notation
+    - Distance
+    - Conditions
+    - Condition details
+    - Stamp for last conditions update
   5. Vertical scroll for data overflow.
   6. Previous/Next carousel buttons.
   7. Carousel container.
