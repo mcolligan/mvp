@@ -1,7 +1,7 @@
 # MTB Trail Companion v1.1
 *powered by MTB Project API*
 
-###### Search the US for MTB trails
+## Search the US for MTB trails. Includes names, descriptions, difficulty, distance and (usually) current conditions.
 
 ## Getting Started:
 
@@ -14,6 +14,11 @@ $ npm install
 - Start webpack
 ```
 $ npm run react-dev
+```
+
+- Start Server
+```
+$ npm start
 ```
 
 ## App Layout:
@@ -44,6 +49,14 @@ Trails Carousel -
   6. Previous/Next carousel buttons.
   7. Carousel container.
 ```
+
+Built with:
+- MTB Project API
+- React.js
+- Bootstrap
+- Express
+- Request
+- Moment.js
 
 
 
