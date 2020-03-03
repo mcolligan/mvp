@@ -5,9 +5,20 @@
 
 ## Getting Started:
 
+- Install Dependencies:
 ```
 $ npm install
 ```
+*NOTE: .env files not supplied*
+
+- Start webpack
+```
+$ npm run react-dev
+```
+
+## App Layout:
+
+![search bar](./components/dist/images/bar.png)
 
 
 
