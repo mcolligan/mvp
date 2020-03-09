@@ -1,10 +1,10 @@
 import React from 'react';
 
-class SearchBox extends React.Component {
+export default class SearchBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchTerm: ''
+      term: ''
     }
   }
 
@@ -33,5 +33,3 @@ class SearchBox extends React.Component {
     )
   }
 }
-
-export default SearchBox;
