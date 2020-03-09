@@ -2,13 +2,13 @@ import app from 'firebase/app';
 import 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAgWXlgEtp0IBXkqx6r71Ww1RydmndNZlU",
-  authDomain: "mtbtrails-181db.firebaseapp.com",
-  databaseURL: "https://mtbtrails-181db.firebaseio.com",
-  projectId: "mtbtrails-181db",
-  storageBucket: "mtbtrails-181db.appspot.com",
-  messagingSenderId: "797895905502",
-  appId: "1:797895905502:web:e3186888a4b20cf053b24f"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 class Firebase {
