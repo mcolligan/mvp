@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import SearchBox from './searchBox.jsx'
 import TrailsList from './trailsList.jsx';
-import tempData from '../../tempData.json';
+import tempData from '../../../tempData.json';
 
 export default class Trails extends React.Component {
   constructor(props) {
@@ -64,7 +64,7 @@ export default class Trails extends React.Component {
       transition: '0.3s'
     }
     return (
-      <div className="container">
+      <div className="container p-3">
         <SearchBox searchClick={this.searchClick.bind(this)} />
         <div className="container p-1">
           <h4><em><u>Trails Near: {this.state.loc}</u></em></h4>

@@ -26,6 +26,8 @@ export default class Signup extends React.Component {
   render() {
     const { fName, lName, email, password1, password2, error } = this.state;
 
+    const isInvalid = password1 !== password2 || password1 === '' || email === '';
+
     return (
       <div className="container border border-dark rounded p-1">
         <p><u>Sign up to utilize all the features!</u></p>
@@ -81,7 +83,7 @@ export default class Signup extends React.Component {
               </div>
             </div>
           </div>
-          <button type="submit" className="btn-outline-info">Submit</button>
+          <button disabled={isInvalid} type="submit" className="btn btn-info">Create Account</button>
           <p>
             Already have an account? <Link to='/signin'>Log in!</Link>
           </p>
