@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Navigation from './components/nav/Navigation.jsx';
 import Trails from './components/apiTrails/trails.jsx';
 
 import Signin from './components/auth/Signin.jsx';
@@ -20,7 +19,6 @@ class App extends React.Component {
         <div className="container p-3">
           <Router>
             <Switch>
-                {/* <Navigation /> */}
                 <Route exact path='/' component={Signin} />
                 <Route path='/signin' component={Signin} />
                 <Route path='/signup' component={Signup} />

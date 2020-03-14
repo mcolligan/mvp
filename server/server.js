@@ -22,7 +22,7 @@ app.get('/trails', (req, res) => {
 
 // Posts
 app.post('/signup', (req, res) => {
-  console.log('here');
+  console.log(req.body);
 })
 
 app.listen('3000', () => {

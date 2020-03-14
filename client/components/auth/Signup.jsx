@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 export default class Signup extends React.Component {
   constructor(props) {
@@ -9,10 +10,10 @@ export default class Signup extends React.Component {
       lName: '',
       email: '',
       password1: '',
-      password2: '',
-      error: null
+      password2: ''
     }
     this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
   onChange(e) {
@@ -20,7 +21,16 @@ export default class Signup extends React.Component {
   }
 
   onSubmit(e) {
-
+    e.preventDefault();
+    axios.post('/signup', this.state)
+    .then((result) => {
+      // redirect to other endpoint
+      console.log('sucess');
+    })
+    .catch((err) => {
+      // does some error stuff
+      console.log('nope')
+    })
   }
 
   render() {
@@ -83,7 +93,7 @@ export default class Signup extends React.Component {
               </div>
             </div>
           </div>
-          <button disabled={isInvalid} type="submit" className="btn btn-info">Create Account</button>
+          <button disabled={isInvalid} type="submit" className="btn btn-info" onClick={this.onSubmit}>Create Account</button>
           <p>
             Already have an account? <Link to='/signin'>Log in!</Link>
           </p>
