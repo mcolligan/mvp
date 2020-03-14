@@ -36,7 +36,7 @@ Search Bar -
 ```
 Trails Carousel -
   3. Display location of search results.
-  4. Trail cards - all loaded from MTB Project API.
+  4. Trail cards - using data from MTB Project API.
     - img
     - Trail name
     - Description

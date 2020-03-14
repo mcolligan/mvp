@@ -8,7 +8,8 @@ export default class Signin extends React.Component {
 
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      error: null
     }
 
     this.onChange = this.onChange.bind(this);
@@ -46,7 +47,7 @@ export default class Signin extends React.Component {
               placeholder="Password">
             </input>
           </div>
-          <button type="submit" class="btn-outline-info">Submit</button>
+          <button type="submit" className="btn-outline-info">Submit</button>
         </form>
         <p>
           Don't have an account? <Link to='/signup'>Sign Up!</Link>
