@@ -30,4 +30,8 @@
 
 // //https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial
 
+<<<<<<< HEAD
 // export default Firebase;
+=======
+export default Firebase;
+>>>>>>> 916c13b2a22bd71a630ce644924805c2b93cd631
