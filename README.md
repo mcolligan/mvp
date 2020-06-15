@@ -9,7 +9,7 @@
 ```
 $ npm install
 ```
-*NOTE: .env files not supplied*
+*NOTE: .env files not supplied, you'll need to build .env and config.js yourself.....or use my AWS version*
 
 - Start webpack
 ```
@@ -53,7 +53,10 @@ Trails Carousel -
 Built with:
 - MTB Project API
 - React.js
+- React-Router
+- Axios
 - Bootstrap
+- Firebase
 - Express
 - Request
 - Moment.js

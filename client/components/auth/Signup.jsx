@@ -23,14 +23,14 @@ export default class Signup extends React.Component {
   onSubmit(e) {
     e.preventDefault();
     axios.post('/signup', this.state)
-    .then((result) => {
-      // redirect to other endpoint
-      console.log('sucess');
-    })
-    .catch((err) => {
-      // does some error stuff
-      console.log('nope')
-    })
+      .then((result) => {
+        // redirect to other endpoint
+        console.log('sucess');
+      })
+      .catch((err) => {
+        // does some error stuff
+        console.log('nope')
+      })
   }
 
   render() {

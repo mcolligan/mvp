@@ -57,12 +57,15 @@ export default class Trails extends React.Component {
       })
     }
   }
+
+
   render() {
-    console.log(process.env.REACT_APP_TEST);
+
     let sliderStyle = {
       transform: `translateX(${this.state.activeIndex * -100}%)`,
       transition: '0.3s'
     }
+
     return (
       <div className="container p-3">
         <SearchBox searchClick={this.searchClick.bind(this)} />
